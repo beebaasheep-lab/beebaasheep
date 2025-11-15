@@ -14,13 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "BeeBaaSheep-Lab"
-email: "beebaasheep@gmail.com"
+email: "你的email"
 description: "視覺藝術家的創作空間,分享插畫、世界觀與故事"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
 twitter_username: "BeeBaaSheep"
-github_username: "beebaabsheep"
+github_username: "beebaasheep"
 minimal_mistakes_skin: default
 search: true
 
