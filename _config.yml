@@ -111,5 +111,5 @@ tag_archive:
   type: liquid
   path: /tags/
 # Custom CSS
-head_scripts:
+after_footer_scripts:
   - /assets/css/custom.css
