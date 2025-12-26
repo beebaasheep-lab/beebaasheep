@@ -40,3 +40,24 @@
   display: table;
   clear: both;
 }
+/* 側邊欄作者區域置中 */
+.sidebar .author__avatar {
+  display: block;
+  margin: 0 auto; /* 圖片置中 */
+}
+
+.sidebar .author__name {
+  text-align: center; /* 名字置中 */
+}
+
+.sidebar .author__bio {
+  text-align: center; /* 簡介置中 */
+}
+
+/* 頭像完全方形 */
+.author__avatar img {
+  border-radius: 0 !important; /* 完全方形 */
+  width: 150px; /* 固定寬度 */
+  height: 150px; /* 固定高度 */
+  object-fit: cover; /* 圖片裁切適應 */
+}
