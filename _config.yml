@@ -110,5 +110,8 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-after_footer_scripts:
-  - /assets/css/custom.css
+# Custom SCSS
+minimal_mistakes_skin: "default" # 保持原樣
+# 在最下面加:
+sass:
+  sass_dir: _sass
