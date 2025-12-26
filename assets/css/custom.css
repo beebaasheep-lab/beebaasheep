@@ -1,6 +1,6 @@
 /* 首頁文章列表改成網格排列 */
 .list__item {
-  width: calc(33.333% - 1em) !important; /* 一行三個 */
+  width: calc(33.333% - 1em) !important;
   float: left !important;
   margin: 0.5em !important;
 }
@@ -40,6 +40,7 @@
   display: table;
   clear: both;
 }
+
 /* 名片式側邊欄排版 */
 .sidebar .author__avatar {
   display: inline-block;
