@@ -110,6 +110,5 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-# Custom CSS
 after_footer_scripts:
   - /assets/css/custom.css
