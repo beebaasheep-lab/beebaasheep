@@ -1,4 +1,5 @@
-/* 網格排列 */
+/* 網格排列 - 同時支援 home 和其他頁面 */
+.list__item,
 .grid__item {
   width: calc(33.333% - 1em) !important;
   float: left !important;
@@ -13,13 +14,28 @@
   height: 100%;
 }
 
+.archive__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 清除浮動 */
+.entries-list::after,
+.entries-grid::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 手機版 */
 @media (max-width: 768px) {
+  .list__item,
   .grid__item {
     width: 100% !important;
   }
 }
 
-/* 側邊欄 */
+/* 側邊欄保持原樣 */
 .sidebar__right {
   .author__avatar {
     position: relative;
@@ -34,7 +50,6 @@
       object-fit: cover;
     }
     
-    /* 右側直書文字 */
     &::after {
       content: "蜂羊";
       position: absolute;
