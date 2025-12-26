@@ -107,6 +107,4 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-after_footer_scripts:
-  - /assets/css/custom.css
-minimal_mistakes_skin: "default" # 保持原樣
+minimal_mistakes_skin: "default"
