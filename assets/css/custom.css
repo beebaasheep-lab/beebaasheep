@@ -1,0 +1,42 @@
+/* 首頁文章列表改成網格排列 */
+.list__item {
+  width: calc(33.333% - 1em) !important; /* 一行三個 */
+  float: left !important;
+  margin: 0.5em !important;
+}
+
+/* 手機版改成一行一個 */
+@media (max-width: 768px) {
+  .list__item {
+    width: 100% !important;
+  }
+}
+
+/* 平板版一行兩個 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .list__item {
+    width: calc(50% - 1em) !important;
+  }
+}
+
+/* 文章卡片樣式 */
+.archive__item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1em;
+  background: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+}
+
+.archive__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 清除浮動 */
+.entries-list::after {
+  content: "";
+  display: table;
+  clear: both;
+}

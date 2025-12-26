@@ -40,24 +40,42 @@
   display: table;
   clear: both;
 }
-/* 側邊欄作者區域置中 */
-.sidebar .author__avatar {
-  display: block;
-  margin: 0 auto; /* 圖片置中 */
-}
+/* 名片式側邊欄排版 */
+.sidebar {
+  .author__avatar {
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    margin-right: 15px;
+  }
 
-.sidebar .author__name {
-  text-align: center; /* 名字置中 */
-}
+  .author__avatar img {
+    border-radius: 8px; /* 小圓角 */
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
 
-.sidebar .author__bio {
-  text-align: center; /* 簡介置中 */
-}
+  .author__content {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 120px);
+  }
 
-/* 頭像完全方形 */
-.author__avatar img {
-  border-radius: 0 !important; /* 完全方形 */
-  width: 150px; /* 固定寬度 */
-  height: 150px; /* 固定高度 */
-  object-fit: cover; /* 圖片裁切適應 */
+  .author__name {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+  }
+
+  .author__urls {
+    margin-top: 5px;
+  }
+
+  .author__bio {
+    clear: both;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+  }
 }
