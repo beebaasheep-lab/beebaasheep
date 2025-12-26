@@ -1,81 +1,59 @@
-/* 首頁文章列表改成網格排列 */
-.list__item {
+/* 網格排列 */
+.grid__item {
   width: calc(33.333% - 1em) !important;
   float: left !important;
   margin: 0.5em !important;
 }
 
-/* 手機版改成一行一個 */
-@media (max-width: 768px) {
-  .list__item {
-    width: 100% !important;
-  }
-}
-
-/* 平板版一行兩個 */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .list__item {
-    width: calc(50% - 1em) !important;
-  }
-}
-
-/* 文章卡片樣式 */
 .archive__item {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 1em;
   background: #fff;
-  transition: transform 0.2s, box-shadow 0.2s;
   height: 100%;
 }
 
-.archive__item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+@media (max-width: 768px) {
+  .grid__item {
+    width: 100% !important;
+  }
 }
 
-/* 清除浮動 */
-.entries-list::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* 名片式側邊欄排版 */
-.sidebar {
+/* 側邊欄 */
+.sidebar__right {
   .author__avatar {
-    display: inline-block;
-    vertical-align: top;
-    width: 100px;
+    position: relative;
+    float: left;
+    width: 80px;
     margin-right: 15px;
+    
+    img {
+      border-radius: 8px;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+    
+    /* 右側直書文字 */
+    &::after {
+      content: "蜂羊";
+      position: absolute;
+      right: -25px;
+      top: 50%;
+      transform: translateY(-50%);
+      writing-mode: vertical-rl;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #f0c419;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+      letter-spacing: 5px;
+    }
   }
-
-  .author__avatar img {
-    border-radius: 8px; /* 小圓角 */
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-  }
-
-  .author__content {
-    display: inline-block;
-    vertical-align: top;
-    width: calc(100% - 120px);
-  }
-
-  .author__name {
-    margin-top: 0;
-    margin-bottom: 5px;
-    font-size: 1.2em;
-  }
-
-  .author__urls {
-    margin-top: 5px;
-  }
-
+  
   .author__bio {
     clear: both;
-    margin-top: 15px;
-    padding-top: 15px;
-    border-top: 1px solid #e0e0e0;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
   }
 }
