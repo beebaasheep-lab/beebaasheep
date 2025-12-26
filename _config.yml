@@ -54,23 +54,20 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+# Site Author
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name             : "BeeBaaSheep" # 你的名字
+  avatar           : "/assets/images/avatar.jpg" # 頭像路徑
+  bio              : "視覺藝術家 | 插畫 | 世界觀創作 | 文字與圖像的探索者" # 你的簡介
+  location         : "" # 可以留空或填地點
+  email            :
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/BeeBaaSheep" # 改成你的連結,沒有就刪掉這段
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/beebaasheep-lab"
 
 footer:
   links:
