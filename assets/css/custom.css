@@ -40,3 +40,40 @@
   display: table;
   clear: both;
 }
+/* 名片式側邊欄排版 */
+.sidebar .author__avatar {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  margin-right: 15px;
+}
+
+.sidebar .author__avatar img {
+  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.sidebar .author__content {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 120px);
+}
+
+.sidebar .author__name {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.sidebar .author__urls {
+  margin-top: 5px;
+}
+
+.sidebar .author__bio {
+  clear: both;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
