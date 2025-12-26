@@ -58,7 +58,7 @@ plugins:
 author:
   name             : "BeeBaaSheep" # 你的名字
   avatar           : "/assets/images/avatar.jpg" # 頭像路徑
-  bio              : "視覺藝術家 | 插畫 | 世界觀創作 | 文字與圖像的探索者" # 你的簡介
+  bio              : "由好奇心和懶散心推動的蜂與羊" # 你的簡介
   location         : "" # 可以留空或填地點
   email            :
   links:
