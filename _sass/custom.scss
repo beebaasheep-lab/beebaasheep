@@ -72,3 +72,40 @@
     border-top: 1px solid #eee;
   }
 }
+/* 側邊欄 */
+.sidebar__right {
+  .author__avatar {
+    position: relative;
+    float: left;
+    width: 100px;  /* 改大一點 */
+    margin-right: 15px;
+    
+    img {
+      border-radius: 8px !important;  /* 加 !important */
+      width: 100px !important;
+      height: 100px !important;
+      object-fit: cover;
+    }
+    
+    &::after {
+      content: "蜂羊";
+      position: absolute;
+      right: -30px;  /* 調整位置 */
+      top: 50%;
+      transform: translateY(-50%);
+      writing-mode: vertical-rl;
+      font-size: 1.8em;  /* 字大一點 */
+      font-weight: bold;
+      color: #f0c419;
+      text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+      letter-spacing: 8px;
+    }
+  }
+  
+  .author__bio {
+    clear: both;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+  }
+}
